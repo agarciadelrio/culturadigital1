@@ -1,0 +1,88 @@
+.tl-headline {
+  color: #FFF!important;
+}
+
+h3.tl-headline-date {
+  font-size: 3rem!important;
+  transform: translateY(-1rem);
+}
+
+.tl-makelink, .tl-makelink:visited {
+  color: rgb(0, 251, 255)!important;
+  font-size: 1rem;
+}
+
+.tl-timemarker[data-css="DESIGN"] .tl-timemarker-content {
+    background-color: #f8d210;
+    .tl-headline {
+        color: black!important;
+    }
+}
+
+.tl-timemarker[data-css="GREEN"] .tl-timemarker-content {
+    background-color: #4caf50 !important;
+}
+.tl-timemarker[data-css="IBM"] .tl-timemarker-content {
+    background-color: #1f70c1 !important;
+}
+.tl-slide[data-slide-id="the-end-slide"] {
+    background-color: var(--color-black);
+    text-align: center;
+}
+.tl-slide[data-slide-id="the-end-slide"] .tl-headline {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.tl-slide[data-css="MONITOR"] .tl-headline {
+  font-family: "Press Start 2P", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(46, 255, 45, 0.95)!important;
+  margin-top: 1rem;
+  line-height: 1.125;
+}
+
+#historia-de-lotus-1-2-3 .tl-text {
+  background-color: rgba(0, 0, 0, 0)!important;
+}
+
+.tl-slide[data-css="MONITOR"] .tl-text {
+  background-color: rgba(0,0,0,0);
+}
+
+.custom-title {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  border: 1px solid #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.custom-title img {
+  border-radius: 10px;
+}
+.custom-title ul {
+  list-style-type: square;
+  color: #FFFFFF;
+}
+.tl-slide .tl-slide-content-container {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.tl-slide .tl-text {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.my-class {
+  border: 2px solid #888888;
+  width: 100%!important;
+  height: 100%!important;
+  display: flex!important;
+  flex-direction: column;
+  .tl-credit, .tl-caption {
+    width: 100%!important;
+  }
+}
