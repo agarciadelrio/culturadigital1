@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Antonio Miguel García del Río. Cultura Digital PEC1 </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- 1 -->
+    <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+
+    <!-- 2 -->
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+    <link rel="stylesheet" href="/layout.css">
+    <link rel="stylesheet" href="/style.css">
+
+
 </head>
 <body>
-    <h1>Antonio Miguel García del Río. Cultura digital PEC1</h1>
+<h1>Antonio Miguel García del Río. Cultura Digital PEC1</h1>
+<div id='timeline-embed'></div>
+
+<!-- 3 -->
+<script type="text/javascript">
+    (function()  {
+        const video = document.createElement('video');
+        const additionalOptions = {
+            start_at_end: false,
+
+            default_bg_color: {r:0, g:0, b:0},
+            timenav_height: 200,
+            language: "es",
+            font: "pt",
+            hash_bookmark: true,
+            soundcite: true,
+        }
+        const timeline_json = '/timeline.json';
+        var timeline = new TL.Timeline('timeline-embed', timeline_json, additionalOptions);
+        timeline.on('loaded', function(evt) {
+            evt.events.forEach(element => {
+                if(element.css) {
+                    console.log('evt',evt)
+                    const div = document.getElementById(element.unique_id)
+                    if(div) { div.dataset.css = element.css; }
+                    const marker = document.getElementById(`${element.unique_id}-marker`)
+                    if(marker) { marker.dataset.css = element.css; }
+                }
+            });
+            const containers = document.querySelectorAll('.tl-slide')
+            console.log('containers', containers)
+            const the_end = document.getElementById('the-end')
+            console.log('the_end', the_end);
+            const tl_media = the_end.querySelector('.tl-media')
+            console.log('tl_media',tl_media)
+            tl_media.setAttribute('class','my-class')
+            video.src = '/img/fin.mov';
+            video.controls = true;
+            video.autoplay = false;
+            tl_media.prepend(video)
+        })
+        // Cada vez que se cambia de diapositiva
+        timeline.on('change', function(evt) {
+            console.log('CHANGE',evt.unique_id, evt)
+            if(evt.unique_id==='the-end') {
+                video.play();
+            } else {
+                video.pause();       // pausa la reproducción
+                video.currentTime = 0;
+            }
+        });
+
+        document.addEventListener('click', function(event) {
+            if (event.target.classList.contains('tl-makelink')) {
+                event.preventDefault();
+                // Abrir el enlace en una nueva pestaña
+                window.open(event.target.href, '_blank');
+            }
+        })
+    }).call(this)
+</script>
 </body>
 </html>
