@@ -5,7 +5,7 @@
       "text": "Evolución cronológica desde los orígenes de Lotus Development Corporation hasta el fin del soporte en 2014."
     },
     "background": {
-        "url": "/img/universe.jpg"
+        "url": "img/universe.jpg"
     },
     "text_color": "#FFFFFF"
   },
@@ -19,12 +19,12 @@
             "text": "Desarrollado por Dan Bricklin y Bob Frankston, VisiCalc fue el primer programa de hoja de cálculo para ordenadores personales. Lanzado inicialmente para el Apple II en 1979, revolucionó el uso del PC en los negocios y se convirtió en la primera 'killer app'. Su declive comenzó con la llegada de Lotus 1-2-3 en 1983. <a href='https://en.wikipedia.org/wiki/VisiCalc' target='_blank'>Wikipedia</a>"
         },
         "media": {
-            "url": "/img/visicalc-1.jpg",
+            "url": "img/visicalc-1.jpg",
             "caption": "VisiCalc. Estableciendo los cimientos.",
             "credit": "https://homecomputer.com.ar/?s=visicalc"
         },
         "background": {
-          "url": "/img/screen.jpg"
+          "url": "img/screen.jpg"
         },
         "text_color": "#2EFF2D"
     },
@@ -35,7 +35,7 @@
         "text": "Mitch Kapor y Jonathan Sachs fundan Lotus Development Corporation con apoyo financiero para crear software empresarial tras la experiencia de Kapor en VisiCorp. <a href='https://en.wikipedia.org/wiki/Mitch_Kapor' target='_blank'>Wikipedia</a>"
       },
       "media": {
-        "url": "/img/MitchKapor0.avif",
+        "url": "img/MitchKapor0.avif",
         "caption": "Mitch Kapor en los 80",
         "credit": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/v2/SN6DQNBMNF2IS2XP3UOEWL3SCQ.JPEG?auth=a203f0bf99a04fe8a9b04c147ee9380d2b343a97e5eaeb65cbbdb1823a4481d8&width=1440"
       }
@@ -61,7 +61,7 @@
         "text": "Ventas y adopción masiva: Lotus 1-2-3 catapultó la demanda de PC para uso empresarial; las cifras históricas apuntan a decenas de millones en ingresos el primer año frente a proyecciones modestas. <a href='https://www.abortretry.fail/p/the-history-of-lotus' target='_blank'>AbortRetry.Fail</a>"
       },
       "media": {
-        "url": "/img/IBM_PC_XT_5160.jpg",
+        "url": "img/IBM_PC_XT_5160.jpg",
         "caption": "IBM PC 5160, la máquina para la que Lotus 1-2-3 fue un 'killer app'",
         "credit": "https://dfarq.homeip.net/why-ibm-bought-lotus/"
       }
@@ -73,7 +73,7 @@
         "text": "Primera versión comercial para MS-DOS; el nombre remarca las tres capacidades integradas: hoja de cálculo, gráficos y operaciones de base de datos. <a href='https://www.wired.com/2009/01/jan-26-1983-spreadsheet-as-easy-as-1-2-3-2' target='_blank'>WIRED</a>"
       },
       "media": {
-        "url": "/img/lotusv1.jpg",
+        "url": "img/lotusv1.jpg",
         "caption": "Etiqueta original de Lotus 1-2-3 1.0",
         "credit": "http://www.emsps.com/oldtools/lotus123v.htm"
       }
@@ -113,7 +113,7 @@
         "text": "Release 2 introdujo soporte de add-ins, mejor gestión de memoria y soporte para coprocesador x87; esto fomentó un ecosistema de terceros. <a href='https://en.wikipedia.org/wiki/Lotus_1-2-3' target='_blank'>Wikipedia</a>"
       },
       "media": {
-        "url": "/img/macro-book.webp",
+        "url": "img/macro-book.webp",
         "caption": "Manual para macros de Lotus 1-2-3",
         "credit": "https://i.ebayimg.com/images/g/AW8AAOSwwW9fbaJP/s-l1600.webp"
       }
@@ -125,7 +125,7 @@
         "text": "Jonathan Sachs se aparta de Lotus en 1985 para trabajar en otros proyectos; su marcha marca el fin de la era del código compacto en ensamblador. <a href='https://en.wikipedia.org/wiki/Jonathan_Sachs' target='_blank'>Wikipedia</a>"
       },
       "media": {
-        "url": "/img/JonathanSachs.png",
+        "url": "img/JonathanSachs.png",
         "caption": "Jonathan Sachs",
         "credit": "https://en.wikipedia.org/wiki/Jonathan_Sachs"
       }
@@ -138,7 +138,7 @@
         "text": "A finales de los 80 y hasta comienzos de los 90, Lotus 1-2-3 dominaba el mercado de hoja de cálculo; encuestas profesionales lo situaban como la opción mayoritaria entre usuarios empresariales. <a href='https://en.wikipedia.org/wiki/Lotus_1-2-3' target='_blank'>Wikipedia</a>"
       },
       "media": {
-        "url": "/img/pcs.jpg",
+        "url": "img/pcs.jpg",
         "caption": "Clones de IBM PC de la época que usaba Lotus 1-2-3",
         "credit": "https://www.intothe90s.com"
       }
@@ -164,7 +164,7 @@
         "text": "Microsoft Excel, con fuerte integración en Windows y en la suite Office, fue ganando terreno; la fragmentación entre versiones de 1-2-3 y la tardía/mala migración a Windows erosionaron su liderazgo. <a href='https://en.wikipedia.org/wiki/Lotus_1-2-3' target='_blank'>Wikipedia</a>"
       },
       "media": {
-        "url": "/img/excel5.webp",
+        "url": "img/excel5.webp",
         "caption": "Microsoft Excel 5.0, competidor decisivo de Lotus 1-2-3",
         "credit": "https://larepublica.pe/tecnologia/2022/02/17/que-programas-se-utilizaban-antes-de-microsoft-excel-word-powerpoint-office-visicalc-lotus-1-2-3"
       }
@@ -177,7 +177,7 @@
       },
       "css": "IBM",
       "media": {
-        "url": "/img/ibmlotus.jpg",
+        "url": "img/ibmlotus.jpg",
         "caption": "Logotipo de IBM y Lotus tras la adquisición",
         "credit": "https://thisdayintechhistory.com/07/06/1-2-3-ibm-buys-lotus/"
       }
@@ -204,7 +204,7 @@
         "text": "IBM anuncia la discontinuidad del soporte para Lotus 1-2-3 y la suite Lotus SmartSuite. El soporte oficial finaliza el 30 de septiembre de 2014, marcando el fin de su comercialización como producto mainstream. <a href='https://hothardware.com/news/the-original-killer-app-killed-lotus-123-goes-eol' target='_blank'>HotHardware</a>"
       },
       "media": {
-        "url": "/img/lotus-end.jpg",
+        "url": "img/lotus-end.jpg",
         "caption": "Caja de Lotus SmartSuite, producto final de la línea",
         "credit": "https://www.msn.com/es-es/noticias/tecnologia/la-historia-de-lotus-smartsuite-auge-ca%C3%ADda-y-legado-de-una-suite-legendaria/ar-AA1CxFfX"
       },
@@ -221,7 +221,7 @@
             "text": "IBM anunció el fin de venta de Lotus 1-2-3, Lotus SmartSuite y Lotus Organizer el 11 de junio de 2013, y el fin de soporte técnico el 30 de septiembre de 2014. Con ello concluyó oficialmente la vida comercial del producto. <a href='https://www.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=897/ENUS913-059' target='_blank'>IBM Announcement Letter #913-059</a>"
         },
         "media": {
-            "url": "/img/lotus986.jpg",
+            "url": "img/lotus986.jpg",
             "caption": "Splash screen de Lotus SmartSuite, última versión (9.8.6) comercializada antes del fin del soporte",
             "credit": "https://img.informer.com/screenshots/349/349617_1.jpg"
         }
@@ -239,7 +239,7 @@
       },
       "text_color": "#FFFFFF",
       "media": {
-        "url": "/img/px.png",
+        "url": "img/px.png",
         "caption": "Créditos finales",
         "credit": "Creado por Antonio M. García del Río"
       }
