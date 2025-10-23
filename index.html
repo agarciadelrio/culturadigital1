@@ -41,7 +41,7 @@
             hash_bookmark: true,
             soundcite: true,
         }
-        const timeline_json = '/timeline.json';
+        const timeline_json = 'timeline.json';
         var timeline = new TL.Timeline('timeline-embed', timeline_json, additionalOptions);
         timeline.on('loaded', function(evt) {
             evt.events.forEach(element => {
