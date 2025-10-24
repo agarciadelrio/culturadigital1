@@ -10,6 +10,10 @@ h3.tl-headline-date {
   font-size: 1rem;
 }
 
+.tl-headline {
+  color: #FFF !important;
+}
+
 .tl-timemarker[data-css="DESIGN"] .tl-timemarker-content {
 
     .tl-headline {
