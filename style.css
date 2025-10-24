@@ -26,7 +26,7 @@ h3.tl-headline-date {
     background-color: #1f70c1 !important;
 }
 .tl-slide[data-slide-id="the-end-slide"] {
-    background-color: var(--color-black);
+    background-color: #000;
     text-align: center;
 }
 .tl-slide[data-slide-id="the-end-slide"] .tl-headline {
@@ -77,12 +77,36 @@ h3.tl-headline-date {
 }
 
 .my-class {
-  border: 2px solid #888888;
+
+  padding: 0rem;
   width: 100%!important;
   height: 100%!important;
   display: flex!important;
   flex-direction: column;
+  video {
+    border-radius: 25px !important;
+    box-shadow: 0 0 30px rgba(0,0,0,1);
+    overflow: hidden;
+    width: 98%;
+  }
   .tl-credit, .tl-caption {
     width: 100%!important;
+  }
+}
+
+.tl-caption {
+  color: #aaa !important;
+}
+
+.tl-text-content p {
+  color: #aaa !important;
+  a, a:visited {
+    color: rgb(98, 160, 247) !important;
+  }
+}
+
+#the-end {
+  .tl-text {
+    background-color: rgba(0,0,0,.1) !important;
   }
 }
