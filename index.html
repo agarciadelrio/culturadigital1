@@ -30,10 +30,11 @@
 <!-- 3 -->
 <script type="text/javascript">
     (function()  {
+        // creo etiqueta de video para insertar en la diapo final
         const video = document.createElement('video');
+        // algunos parámetros iniciales
         const additionalOptions = {
             start_at_end: false,
-
             default_bg_color: {r:0, g:0, b:0},
             timenav_height: 200,
             language: "es",
@@ -41,12 +42,14 @@
             hash_bookmark: true,
             soundcite: true,
         }
+        // ruta del fichero de datos
         const timeline_json = 'timeline.json';
+        // creo el objeto timeline
         var timeline = new TL.Timeline('timeline-embed', timeline_json, additionalOptions);
+        // cuando se ha terminado de crear todo el timeline asigno estilos a capas e inserto el contenedor del vídeo
         timeline.on('loaded', function(evt) {
             evt.events.forEach(element => {
                 if(element.css) {
-                    console.log('evt',evt)
                     const div = document.getElementById(element.unique_id)
                     if(div) { div.dataset.css = element.css; }
                     const marker = document.getElementById(`${element.unique_id}-marker`)
@@ -54,32 +57,28 @@
                 }
             });
             const containers = document.querySelectorAll('.tl-slide')
-            console.log('containers', containers)
             const the_end = document.getElementById('the-end')
-            console.log('the_end', the_end);
             const tl_media = the_end.querySelector('.tl-media')
-            console.log('tl_media',tl_media)
             tl_media.setAttribute('class','my-class')
             video.src = 'img/the-end.mov';
             video.controls = true;
             video.autoplay = false;
             tl_media.prepend(video)
         })
-        // Cada vez que se cambia de diapositiva
+        // Cada vez que se cambia de diapositiva para controlar el estado del reproductor
         timeline.on('change', function(evt) {
-            console.log('CHANGE',evt.unique_id, evt)
             if(evt.unique_id==='the-end') {
                 video.play();
             } else {
-                video.pause();       // pausa la reproducción
+                video.pause();
                 video.currentTime = 0;
             }
         });
 
+        // Abrir los enlaces en una nueva pestaña
         document.addEventListener('click', function(event) {
             if (event.target.classList.contains('tl-makelink')) {
                 event.preventDefault();
-                // Abrir el enlace en una nueva pestaña
                 window.open(event.target.href, '_blank');
             }
         })

@@ -1,6 +1,4 @@
-.tl-headline {
-  color: #FFF!important;
-}
+
 
 h3.tl-headline-date {
   font-size: 3rem!important;
@@ -13,18 +11,13 @@ h3.tl-headline-date {
 }
 
 .tl-timemarker[data-css="DESIGN"] .tl-timemarker-content {
-    background-color: #f8d210;
+
     .tl-headline {
         color: black!important;
     }
 }
 
-.tl-timemarker[data-css="GREEN"] .tl-timemarker-content {
-    background-color: #4caf50 !important;
-}
-.tl-timemarker[data-css="IBM"] .tl-timemarker-content {
-    background-color: #1f70c1 !important;
-}
+
 .tl-slide[data-slide-id="the-end-slide"] {
     background-color: #000;
     text-align: center;
